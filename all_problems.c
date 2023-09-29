@@ -10,7 +10,7 @@ void problem_6();
 void problem_7();
 void problem_8();
 void problem_9();
-// void problem_10();
+void problem_10();
 
 void main()
 {
@@ -23,7 +23,7 @@ void main()
     problem_7();
     problem_8();
     problem_9();
-    // problem_10();
+    problem_10();
     getch();
 }
 
