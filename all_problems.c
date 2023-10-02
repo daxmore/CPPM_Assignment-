@@ -68,7 +68,7 @@ void problem_3()
 void problem_4()
 {
     int num1 = 30, num2 = 10;
-    printf("the addition is %d + %d = %d\n\n", num1, num2, num1 * num2);
+    printf("the addition is %d * %d = %d\n\n", num1, num2, num1 * num2);
     getch();
 }
 
@@ -109,7 +109,7 @@ void problem_7()
     int number1 = 10, number2 = 30, temporaryvar;
 
     printf("Before swapped value of number1 is: %d\n", number1);
-    printf("Before swapped value of number2 is: %d\n", number2);
+    printf("Before swapped value of number2 is: %d\n\n", number2);
 
     temporaryvar = number1;
     number1 = number2;
@@ -126,14 +126,15 @@ void problem_8()
     int length, width;
     printf("Enter length and width: ");
     scanf("%d%d", &length, &width);
-    printf("the Sum Of lenght %d * width %d = %d\n\n", length, width, length * width);
+    printf("the Sum Of lenght %d * width:&d = %d\n\n", length, width, length * width);
     getch();
 }
 
 void problem_9()
 {
     int number;
-    scanf("enter the number you wamt from computer: &number", &number);
+    printf("enter the number you want from computer: ");
+    scanf("%d", &number);
     if (number > 0)
     {
         printf("the given umber is positive\n\n");
@@ -142,5 +143,29 @@ void problem_9()
     {
         printf("the given number is Negative\n\n");
     }
+    getch();
+}
+
+void problem_10(){
+    float basicSalary, totalSalary;
+    
+    printf("Enter the basic salary: ");
+    scanf("%f", &basicSalary);
+
+    float hra, da;
+    if (basicSalary <= 10000) {
+        hra = 0.2 * basicSalary;
+        da = 0.8 * basicSalary;
+    } else if (basicSalary > 10000 && basicSalary <= 20000) {
+        hra = 0.25 * basicSalary;
+        da = 0.9 * basicSalary;
+    } else {
+        hra = 0.3 * basicSalary;
+        da = 0.95 * basicSalary;
+    }
+    totalSalary = basicSalary + hra + da;
+
+    printf("Total Salary: %f\n", totalSalary);
+
     getch();
 }
