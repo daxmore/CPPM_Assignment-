@@ -126,7 +126,7 @@ void problem_8()
     int length, width;
     printf("Enter length and width: ");
     scanf("%d%d", &length, &width);
-    printf("the Sum Of lenght %d * width:&d = %d\n\n", length, width, length * width);
+    printf("the Sum Of lenght %d * width %d = %d\n\n", length, width, length * width);
     getch();
 }
 
